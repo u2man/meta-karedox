@@ -1,0 +1,30 @@
+# Local configuration for meta-wandboard images
+# Yocto Project 5.2 Poky distribution [walnascar] branch
+
+LICENSE_FLAGS_ACCEPTED = "commercial"
+
+DISTRO_FEATURES = "ext2 systemd usbhost ${DISTRO_FEATURES_LIBC}"
+
+DISTRO_FEATURES_BACKFILL_CONSIDERED = "pulseaudio sysvinit"
+
+DISTRO_FEATURES:remove = "ptest"
+
+INIT_MANAGER = "systemd"
+
+MACHINE = "karedox"
+
+#DL_DIR = "/src/scarthgap"
+#SSTATE_DIR = "/oe2/karedox/sstate-cache"
+#TMPDIR = "/oe2/karedox/tmp"
+
+DISTRO = "poky"
+PACKAGE_CLASSES = "package_ipk"
+
+SDKMACHINE = "x86_64"
+
+EXTRA_IMAGE_FEATURES = "empty-root-password allow-empty-password allow-root-login"
+
+PATCHRESOLVE = "noop"
+RM_OLD_IMAGE = "1"
+INHERIT += "rm_work"
+CONF_VERSION = "2"
