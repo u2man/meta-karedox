@@ -1,0 +1,15 @@
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+  ${HOME}/poky-walnascar/meta \
+  ${HOME}/poky-walnascar/meta-poky \
+  ${HOME}/poky-walnascar/meta-openembedded/meta-oe \
+  ${HOME}/poky-walnascar/meta-openembedded/meta-networking \
+  ${HOME}/poky-walnascar/meta-openembedded/meta-python \
+  ${HOME}/wandboard/meta-wandboard \
+"
