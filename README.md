@@ -1,7 +1,7 @@
 This layer depends on:
 
 URI: git://git.yoctoproject.org/poky.git
-branch: walnascar
+branch: scarthgap
 
 URI: git://git.openembedded.org/meta-openembedded
-branch: walnascar
+branch: scarthgap
